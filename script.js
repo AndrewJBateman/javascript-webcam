@@ -8,7 +8,7 @@ function getVideo() {
   navigator.mediaDevices.getUserMedia({ video: true, audio_: false })
   .then(localMediaStream => {
     console.log(localMediaStream);
-    video.src = window.URL.createObjectURL(localMediaStream);
+    video.srcObject = localMediaStream;
     video.play();
   })
   .catch(err => {
@@ -22,14 +22,15 @@ function paintToCanvas() {
   canvas.width = width;
   canvas.height = height;
 
+  // canvas rendering 
   setInterval(() => {
     ctx.drawImage(video, 0, 0, width, height);
     //take pixels out
     let pixels = ctx.getImageData(0, 0, width, height);
     //change pixel values
-    //pixels = redEffect(pixels);
-    //pixels = rgbSplit(pixels);
-    //ctx.globalAlpha = 0.1;
+    // pixels = redEffect(pixels);
+    // pixels = rgbSplit(pixels);
+    // ctx.globalAlpha = 0.1;
     
     pixels = greenScreen(pixels);
     //put them back
