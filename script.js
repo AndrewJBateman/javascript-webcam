@@ -22,7 +22,7 @@ function paintToCanvas() {
   canvas.width = width;
   canvas.height = height;
 
-  // canvas rendering 
+  // canvas rendering
   setInterval(() => {
     ctx.drawImage(video, 0, 0, width, height);
     //take pixels out
@@ -31,7 +31,7 @@ function paintToCanvas() {
     // pixels = redEffect(pixels);
     // pixels = rgbSplit(pixels);
     // ctx.globalAlpha = 0.1;
-    
+
     pixels = greenScreen(pixels);
     //put them back
     ctx.putImageData(pixels, 0, 0);

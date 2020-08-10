@@ -1,38 +1,41 @@
-# Javascript Webcam
+# :zap: Javascript Webcam
 
 Wes Bos Youtube Tutorial: [Unreal Webcam Fun with getUserMedia() and HTML5 Canvas - #JavaScript30 19/30](https://www.youtube.com/watch?v=ElWFcBlVk-o&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH&index=19).
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
-## Table of contents
+## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: Javascript Webcam](#zap-javascript-webcam)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
-## General info
+## :books: General info
 
 * Tutorial Code for a webcam in javascript app, using a local server to host the webcam.
 
-## Screenshots
+## :camera: Screenshots
 
 ![Example screenshot](./img/webcam.png).
 ![Example screenshot](./img/server.png).
 
-## Technologies
+## :signal_strength: Technologies
 
 * Ran in Google Chrome browser with: [Javascript engine V8 7.9.317.32 for Windows (x64)](https://v8.dev/).
 
-## Setup
+## :floppy_disk: Setup
 
-* run 'npm i' to install 'browser-sync' package then type 'npm run'.
+* run 'npm i' to install 'browser-sync' package then type 'npm run start'.
 
-## Code Examples
+## :computer: Code Examples
 
 * function to get video stream data and play it.
 
@@ -50,20 +53,19 @@ function getVideo() {
 }
 ```
 
-## Features
+## :cool: Features
 
-*  Updated as video.src is deprecated in Chrome Browser: video.srcObject is the new version.
+* Updated as video.src is deprecated in Chrome Browser: video.srcObject is the new version.
 
-## Status & To-Do List
+## :clipboard: Status & To-Do List
 
-* Status: Working.
+* Status: Part working. does not take photos as link "http://wesbos.com/demos/photobooth/snap.mp3" does not exist anymore. So photo download just downloads an empty image. Filtering does not work any more.
+* To-Do: replace
 
-* To-Do: fix filters code - filtering not working well.
-
-## Inspiration
+## :clap: Inspiration
 
 * Wes Bos Youtube Tutorial: [Unreal Webcam Fun with getUserMedia() and HTML5 Canvas - #JavaScript30 19/30](https://www.youtube.com/watch?v=ElWFcBlVk-o&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH&index=19).
 
-## Contact
+## :envelope: Contact
 
-Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)

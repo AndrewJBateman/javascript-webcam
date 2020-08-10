@@ -1,7 +1,7 @@
 {
   "name": "gum",
   "version": "1.0.0",
-  "description": "",
+  "description": "Webcam App",
   "main": "scripts.js",
   "scripts": {
     "start": "browser-sync start --server --files \"*.css, *.html, *.js\""
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.12"
   }
 }
